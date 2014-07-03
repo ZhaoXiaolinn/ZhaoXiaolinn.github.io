@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>onCrash = 'reboot();'</title><link href="/" rel="alternate"></link><link href="/feeds%5Clinne.atom.xml" rel="self"></link><id>/</id><updated>2014-07-03T09:33:00+05:00</updated><entry><title>Hello World</title><link href="/git-p4-au-secours-de-perforce-cn.html" rel="alternate"></link><updated>2014-07-03T09:33:00+05:00</updated><author><name>Linne</name></author><id>tag:,2014-07-03:git-p4-au-secours-de-perforce-cn.html</id><summary type="html">&lt;p&gt;This is my first&amp;nbsp;Blog.&lt;/p&gt;
+&lt;h2&gt;Description&lt;/h2&gt;
+&lt;p&gt;This page is based on&amp;nbsp;Github.io  &lt;/p&gt;
+&lt;p&gt;Use Pelican to convert md to&amp;nbsp;Html&lt;/p&gt;
+&lt;p&gt;As the default theme is urgly, I use the Elegant to custom this&amp;nbsp;page.&lt;/p&gt;
+&lt;h2&gt;Environment&lt;/h2&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;p&gt;Github&lt;/p&gt;
+&lt;p&gt;Vim(Text&amp;nbsp;Editor)&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;t&amp;nbsp;all&lt;/p&gt;
+&lt;h3&gt;Python&lt;/h3&gt;
+&lt;p&gt;Python 2.7 is recommanded as many lib are only based&amp;nbsp;2.X&lt;/p&gt;
+&lt;p&gt;The truth is my &lt;span class="caps"&gt;DSP&lt;/span&gt; teacher ask us to write code under Python(&lt;span class="caps"&gt;XY&lt;/span&gt;), which is only available on Python&amp;nbsp;2.X&lt;/p&gt;
+&lt;h3&gt;GitHub&lt;/h3&gt;
+&lt;p&gt;The io project is&amp;nbsp;great.&lt;/p&gt;
+&lt;h3&gt;Vim&lt;/h3&gt;
+&lt;p&gt;One of the most awesome two text editors, it&amp;#8217;s really convenient to&amp;nbsp;use.&lt;/p&gt;</summary><category term="md"></category><category term="python"></category></entry></feed>

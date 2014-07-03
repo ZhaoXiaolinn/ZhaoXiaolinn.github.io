@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>onCrash = 'reboot();'</title><link href="/" rel="alternate"></link><link href="/feeds%5Ctalha-mansoor.atom.xml" rel="self"></link><id>/</id><updated>2014-03-24T14:05:00+05:00</updated><entry><title>How to Customize Elegant</title><link href="/how-to-customize-elegant" rel="alternate"></link><updated>2014-03-24T14:05:00+05:00</updated><author><name>Talha Mansoor</name></author><id>tag:,2014-03-24:how-to-customize-elegant</id><summary type="html">&lt;p&gt;[&lt;span class="caps"&gt;TOC&lt;/span&gt;]&lt;/p&gt;
+&lt;p&gt;You can change Elegant&amp;#8217;s look, color palette, font, size, and even labels used
+for widgets, sections and&amp;nbsp;plugins.&lt;/p&gt;
+&lt;p&gt;Elegant is best maintained when you treat it as a separate resource in your
+project. Do not edit template files, JavaScript code and style sheets. This
+practice will make upgrading Elegant fuss free&amp;nbsp;process.&lt;/p&gt;
+&lt;p&gt;Instead use following recommended&amp;nbsp;ways.&lt;/p&gt;
+&lt;h1&gt;Customize&amp;nbsp;Style&lt;/h1&gt;
+&lt;p&gt;To customize Elegant&amp;#8217;s visual style, use
+&lt;a href="https://github.com/talha131/pelican-elegant/blob/master/static/css/custom.css"&gt;&lt;code&gt;custom.css&lt;/code&gt;&lt;/a&gt;.
+You can override Elegant&amp;#8217;s visual style like font, color, spacing etc using
+this sheet. This empty style sheet is present at following path in your Elegant&amp;nbsp;folder,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;static/css/custom.css
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Find the code of the element you want to customize in
+&lt;a href="https://github.com/talha131/pelican-elegant/blob/master/static/css/elegant.css"&gt;&lt;code&gt;elegant.css&lt;/code&gt;&lt;/a&gt;.
+Copy the element&amp;#8217;s selector and styles, and paste it in &lt;code&gt;custom.css&lt;/code&gt;. Edit this
+&lt;span class="caps"&gt;CSS&lt;/span&gt; code and customize it to your&amp;nbsp;liking.&lt;/p&gt;
+&lt;p&gt;Your customizations will override whatever rules are defined in &lt;code&gt;elegant.css&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Let&amp;#8217;s take a look how you can change the style of hyperlinks in an article.
+Following is the relevant&amp;nbsp;code,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;#list-of-translations&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;#post-share-links&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;ol&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.article-content&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nc"&gt;.articles-timeline&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nc"&gt;.related-posts-list&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;thin&lt;/span&gt; &lt;span class="k"&gt;dashed&lt;/span&gt; &lt;span class="m"&gt;#A9A9A9&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;#000&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Copy and paste it in &lt;code&gt;custom.css&lt;/code&gt;. Change color to red for&amp;nbsp;example,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;p&lt;/span&gt;&lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;#list-of-translations&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nf"&gt;#post-share-links&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;ol&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;
+&lt;span class="nt"&gt;article&lt;/span&gt; &lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="nc"&gt;.article-content&lt;/span&gt; &lt;span class="nt"&gt;ul&lt;/span&gt;&lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nc"&gt;.articles-timeline&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt;&lt;span class="nd"&gt;:not&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nc"&gt;.related-posts-list&lt;/span&gt;&lt;span class="o"&gt;)&lt;/span&gt; &lt;span class="nt"&gt;a&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+    &lt;span class="k"&gt;border-bottom&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;thin&lt;/span&gt; &lt;span class="k"&gt;dashed&lt;/span&gt; &lt;span class="m"&gt;#A9A9A9&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nb"&gt;red&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Test your website using Pelican. All links should be colored&amp;nbsp;red.&lt;/p&gt;
+&lt;p&gt;Read &lt;a href="avoid-unnecessary-http-requests"&gt;this post&lt;/a&gt; to make sure your site&amp;#8217;s page
+speed does not decrease due to additional &lt;span class="caps"&gt;HTTP&lt;/span&gt;&amp;nbsp;request.&lt;/p&gt;
+&lt;h1&gt;Change Syntax Highlight&amp;nbsp;Theme&lt;/h1&gt;
+&lt;p&gt;Elegant uses &lt;a href="http://ethanschoonover.com/solarized"&gt;Solarized theme&lt;/a&gt; for syntax
+highlighting. To replace it, copy contents of your preferred theme&amp;#8217;s &lt;span class="caps"&gt;CSS&lt;/span&gt; style
+sheet into &lt;code&gt;custom.css&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Alternatively, you can replace contents of &lt;code&gt;pygments.css&lt;/code&gt; with your theme&amp;#8217;s
+style&amp;nbsp;sheet.&lt;/p&gt;
+&lt;p&gt;If you feel like experimenting with different themes then &lt;a href="https://github.com/uraimo/pygments-vimstyles"&gt;this
+repository&lt;/a&gt; has Pygments &lt;span class="caps"&gt;CSS&lt;/span&gt; of
+Vim themes. &lt;a href="https://github.com/richleland/pygments-css"&gt;This one&lt;/a&gt; has Pygments
+&lt;span class="caps"&gt;CSS&lt;/span&gt; of built-in styles. Do not forget to change &lt;code&gt;.codehilite&lt;/code&gt; &lt;span class="caps"&gt;CSS&lt;/span&gt; class
+identifier to &lt;code&gt;.highlight&lt;/code&gt;. Code blocks in Pelican generated &lt;span class="caps"&gt;HTML&lt;/span&gt; use
+&lt;code&gt;.highlight&lt;/code&gt; class.&lt;/p&gt;
+&lt;h1&gt;Change&amp;nbsp;Labels&lt;/h1&gt;
+&lt;p&gt;It is quite possible you will feel the need to tweak labels of different
+sections or widgets. For example, change label of &lt;a href="/how-to-display-your-social-media-profiles"&gt;social
+widget&lt;/a&gt; from &amp;#8220;Contact&amp;#8221; to &amp;#8220;Stay in&amp;nbsp;Touch&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;Don&amp;#8217;t worry! We got you&amp;nbsp;covered!&lt;/p&gt;
+&lt;p&gt;Elegant has all the customizable variables in one place. &lt;a href="https://github.com/talha131/pelican-elegant/blob/master/templates/_includes/_defaults.html"&gt;&lt;code&gt;_defaults.html&lt;/code&gt;
+file&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;templates/_includes/_defaults.html
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Let&amp;#8217;s see how can we change social widget&amp;nbsp;label.&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;{# Label for the list of social profiles #}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;not&lt;/span&gt; &lt;span class="nv"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Contact&amp;#39;&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;else&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nv"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nv"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;{%&lt;/span&gt; &lt;span class="k"&gt;endif&lt;/span&gt; &lt;span class="cp"&gt;%}&lt;/span&gt;&lt;span class="x"&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;Line 1, text enclosed in &lt;code&gt;{# #}&lt;/code&gt; is a comment, which says this section is about
+&amp;#8220;Label for the list of social&amp;nbsp;profiles&amp;#8221;. &lt;/p&gt;
+&lt;p&gt;The text in all capital case &lt;code&gt;SOCIAL_PROFILE_LABEL&lt;/code&gt; is the actual&amp;nbsp;variable.&lt;/p&gt;
+&lt;p&gt;Line 3 says &lt;code&gt;SOCIAL_PROFILE_LABEL&lt;/code&gt; is set to &lt;code&gt;Contact&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To change this value, assign it a different value in your Pelican
+configuration, &lt;code&gt;pelicanconf.py&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;SOCIAL_PROFILE_LABEL&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;Stay in Touch&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;That&amp;#8217;s it. The title of social widget will change. There are several others
+labels that you can customize easily without touching Elegant&amp;#8217;s source&amp;nbsp;code.&lt;/p&gt;</summary><category term="pelican-theme"></category><category term="config"></category></entry></feed>
